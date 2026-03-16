@@ -16,7 +16,7 @@ export default function FinalCTA() {
             <a href="#inquiry">Get Quote</a>
           </Button>
           <Button size="lg" variant="outline" className="w-full sm:w-auto border-white text-white bg-blue-500 hover:bg-white hover:text-primary px-10 py-7 text-xl font-bold gap-3" asChild>
-            <a href="tel:+919876543210">
+            <a href="tel:+916391010314">
               <PhoneCall className="w-6 h-6" />
               Call Now
             </a>
