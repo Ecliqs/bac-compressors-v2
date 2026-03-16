@@ -32,7 +32,7 @@ export default function ManufacturingStrength() {
           <div className="space-y-8 order-1 lg:order-2">
             <h2 className="text-3xl md:text-4xl font-bold font-headline">Engineering Capability & Manufacturing Strength</h2>
             <p className="text-lg text-primary-foreground/80 leading-relaxed">
-              At BAC Air Solutions, we don't just assemble; we engineer. Our vertically integrated manufacturing facility ensures that every component meets the highest standards of precision and durability.
+              At BAC Air Compressors, we don't just assemble; we engineer. Our vertically integrated manufacturing facility ensures that every component meets the highest standards of precision and durability.
             </p>
             <div className="grid gap-4">
               {points.map((p, idx) => (
