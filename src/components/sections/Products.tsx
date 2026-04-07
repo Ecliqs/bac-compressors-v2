@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 import Reciprocating from "@/assets/compressor.webp";
@@ -6,7 +8,6 @@ import ScrewCompressor from "@/assets/screw-compressor.webp";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2 } from "lucide-react";
-
 
 // ✅ Products Data
 const products = [
@@ -45,8 +46,6 @@ const products = [
 export default function Products() {
   return (
     <section id="products" className="py-20 bg-background">
-
-      {/* ✅ Product Section */}
       <div className="container mx-auto px-4">
 
         {/* Heading */}
@@ -82,31 +81,35 @@ export default function Products() {
 
                 {/* Title */}
                 <div className="absolute bottom-6 left-6 text-white">
-                  <h3 className="text-2xl font-bold">
+                  <h3 className="text-xl sm:text-2xl font-bold leading-tight">
                     {product.title}
                   </h3>
                 </div>
               </div>
 
               {/* Content */}
-              <CardContent className="p-8 space-y-6">
-                <p className="text-muted-foreground leading-relaxed">
+              <CardContent className="p-6 sm:p-8 space-y-6">
+                <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">
                   {product.description}
                 </p>
 
-                {/* Features */}
+                {/* ✅ Fixed Features Section */}
                 <div className="space-y-3">
                   {product.features.map((feature, i) => (
-                    <div key={i} className="flex items-center gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-accent" />
-                      <span className="text-sm font-medium">{feature}</span>
+                    <div key={i} className="flex items-start gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-accent mt-0.5 shrink-0" />
+                      <span className="text-sm font-medium leading-relaxed">
+                        {feature}
+                      </span>
                     </div>
                   ))}
                 </div>
 
                 {/* Button */}
-                <Button className="w-full py-6 font-bold bg-red-600" asChild>
-                  <a href="#inquiry">{product.ctaText}</a>
+                <Button className="w-full py-5 font-bold bg-red-600 hover:bg-red-700">
+                  <a href="#inquiry" className="w-full text-center">
+                    {product.ctaText}
+                  </a>
                 </Button>
               </CardContent>
             </Card>
