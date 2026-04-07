@@ -2,8 +2,8 @@ import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'BAC Air Solutions | Industrial Air Compressors',
-  description: 'High-performance reciprocating and screw air compressors designed for durability, energy efficiency, and continuous industrial use since 1988.',
+  title: 'BAC Air Compressors',
+  description: 'High-performance reciprocating and screw air compressors designed for durability, energy efficiency, and continuous industrial use since 1980.',
 };
 
 export default function RootLayout({

@@ -23,28 +23,24 @@ export default function LeadForm() {
     company: "",
     mobile: "",
     email: "",
-    zip: "",
+    designation: "", // ✅ UPDATED
     city: "",
     product: "",
     requirement: "",
-    consent: false,
   })
 
   const handleChange = (e: any) => {
-
-    const { name, value, type, checked } = e.target
+    const { name, value } = e.target
 
     setFormData({
       ...formData,
-      [name]: type === "checkbox" ? checked : value,
+      [name]: value,
     })
   }
-
 
   const handleSubmit = async (e: React.FormEvent) => {
 
     e.preventDefault()
-
     setLoading(true)
 
     try {
@@ -92,8 +88,6 @@ export default function LeadForm() {
     setLoading(false)
   }
 
-
-
   return (
     <section id="inquiry" className="py-20 bg-background scroll-mt-16">
 
@@ -105,7 +99,7 @@ export default function LeadForm() {
 
             {/* LEFT SECTION */}
 
-            <div className="p-8 md:p-12 bg-primary text-primary-foreground space-y-6 flex flex-col justify-center">
+            <div className="p-8 md:p-12 bg-red-600 text-primary-foreground space-y-6 flex flex-col justify-center">
 
               <h2 className="text-3xl md:text-4xl font-bold font-headline">
                 Need the Right Air Compressor for Your Factory?
@@ -144,8 +138,6 @@ export default function LeadForm() {
 
             </div>
 
-
-
             {/* FORM */}
 
             <div className="p-8 md:p-12 bg-white">
@@ -178,8 +170,6 @@ export default function LeadForm() {
 
                 </div>
 
-
-
                 {/* Mobile + Email */}
 
                 <div className="grid sm:grid-cols-2 gap-4">
@@ -196,7 +186,7 @@ export default function LeadForm() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label>Email *</Label>
+                    <Label>Email</Label>
                     <Input
                       name="email"
                       type="email"
@@ -207,17 +197,15 @@ export default function LeadForm() {
 
                 </div>
 
-
-
-                {/* Zip + City */}
+                {/* Designation + City */}
 
                 <div className="grid sm:grid-cols-2 gap-4">
 
                   <div className="space-y-2">
-                    <Label>Zip Code *</Label>
+                    <Label>Designation *</Label>
                     <Input
-                      name="zip"
-                      value={formData.zip}
+                      name="designation"
+                      value={formData.designation}
                       onChange={handleChange}
                       required
                     />
@@ -235,8 +223,6 @@ export default function LeadForm() {
 
                 </div>
 
-
-
                 {/* Product */}
 
                 <div className="space-y-2">
@@ -252,28 +238,12 @@ export default function LeadForm() {
                   >
 
                     <option value="">Select Product</option>
-
-                    <option>
-                      EG Rotary Screw Compressor - 11-250 kW
-                    </option>
-
-                    <option>
-                      SP Rotary Screw Compressor - 90-110 kW
-                    </option>
-
-                    <option>
-                      PM Rotary Screw Compressor - 11-45 kW
-                    </option>
-
-                    <option>
-                      Rotary Screw Compressor - 2.2-37 kW
-                    </option>
+                    <option>Rotary Screw Compressor VFD Equipped</option>
+                    <option>Reciprocating Piston Compressors</option>
 
                   </select>
 
                 </div>
-
-
 
                 {/* Requirement */}
 
@@ -290,36 +260,11 @@ export default function LeadForm() {
 
                 </div>
 
-
-
-                {/* Consent */}
-
-                {/* <div className="flex items-start gap-2 text-sm">
-
-                  <input
-                    type="checkbox"
-                    name="consent"
-                    checked={formData.consent}
-                    onChange={handleChange}
-                    required
-                  />
-
-                  <span>
-                    I agree to the{" "}
-                    <span className="text-red-500 underline cursor-pointer">
-                      privacy policy
-                    </span>.
-                  </span>
-
-                </div> */}
-
-
-
                 {/* Submit */}
 
                 <Button
                   type="submit"
-                  className="w-full bg-accent text-accent-foreground hover:bg-accent/90 py-6 text-lg font-bold"
+                  className="w-full bg-red-600 text-white hover:text-accent-foreground hover:bg-accent/90 py-6 text-lg font-bold"
                   disabled={loading}
                 >
 

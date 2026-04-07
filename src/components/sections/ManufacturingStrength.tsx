@@ -15,7 +15,7 @@ export default function ManufacturingStrength() {
   const factoryImg = PlaceHolderImages.find(i => i.id === 'factory-floor');
 
   return (
-    <section className="py-20 bg-primary text-primary-foreground overflow-hidden">
+    <section className="py-20 bg-red-600 text-primary-foreground overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="relative order-2 lg:order-1">

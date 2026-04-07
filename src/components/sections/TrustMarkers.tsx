@@ -30,7 +30,7 @@ const markers = [
 
 export default function TrustMarkers() {
   return (
-    <section className="py-12 bg-primary text-primary-foreground">
+    <section className="py-12 bg-red-600 text-primary-foreground">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-start">
           {markers.map((item, idx) => (
@@ -46,6 +46,8 @@ export default function TrustMarkers() {
           ))}
         </div>
       </div>
+      
     </section>
+    
   );
 }

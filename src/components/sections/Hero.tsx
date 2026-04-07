@@ -24,7 +24,7 @@ export default function Hero() {
     company: "",
     mobile: "",
     email: "",
-    zip: "",
+    designation: "",
     city: "",
     product: "",
     requirement: "",
@@ -114,6 +114,8 @@ export default function Hero() {
               Industrial Air Compressors Built for Reliable Factory Operations
             </h1>
 
+            <p className="text-lg md:text-xl text-red-600 max-w-xl">Air Compressors Starting From ₹50,000</p>
+
             <p className="text-lg md:text-xl text-muted-foreground max-w-xl">
               High-performance reciprocating and screw air compressors designed
               for durability, energy efficiency, and continuous industrial use since 1980.
@@ -154,13 +156,13 @@ export default function Hero() {
 
             <Card className="border-accent/20 shadow-2xl relative z-10 overflow-hidden">
 
-              <CardHeader className="bg-primary text-primary-foreground pb-8">
+              <CardHeader className="bg-red-600 text-primary-foreground pb-8">
 
                 <CardTitle className="text-2xl font-bold">
                   Get a Fast Quote
                 </CardTitle>
 
-                <CardDescription className="text-primary-foreground/70">
+                <CardDescription className="text-primary-foreground/100">
                   Request customized pricing and technical consultation for your unit.
                 </CardDescription>
 
@@ -233,14 +235,14 @@ export default function Hero() {
                   <div className="grid sm:grid-cols-2 gap-4">
 
                     <div className="space-y-2">
-                      <Label>Zip Code *</Label>
-                      <Input
-                        name="zip"
-                        value={formData.zip}
-                        onChange={handleChange}
-                        required
-                      />
-                    </div>
+                    <Label>Designation *</Label>
+                    <Input
+                      name="designation"
+                      value={formData.designation}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
 
                     <div className="space-y-2">
                       <Label>City *</Label>
@@ -271,11 +273,8 @@ export default function Hero() {
                     >
                       <option value="">Select Product</option>
 
-                      <option>EG Rotary Screw Compressor - 11-250 kW</option>
-                      <option>SP Rotary Screw Compressor - 90-110 kW</option>
-                      <option>PM Rotary Screw Compressor - 11-45 kW</option>
-                      <option>Rotary Screw Compressor - 2.2-37 kW</option>
-
+                      <option>Rotary Screw Compressor VFD Equipped</option>
+                      <option>Reciprocating Piston Compressors</option>
                     </select>
 
                   </div>
@@ -303,13 +302,13 @@ export default function Hero() {
 
                   <Button
                     type="submit"
-                    className="w-full bg-accent text-accent-foreground hover:bg-accent/90 py-6 text-lg font-bold"
+                    className="w-full bg-red-600 text-white hover:text-accent-foreground hover:bg-accent/90 py-6 text-lg font-bold"
                     disabled={loading}
                   >
 
                     {loading ? "Processing..." : (
                       <>
-                        Get Best Price
+                        Get Quote in 24 Hours
                         <Send className="ml-2 w-5 h-5" />
                       </>
                     )}

@@ -31,7 +31,7 @@ export default function LeadPopup() {
     company: "",
     mobile: "",
     email: "",
-    zip: "",
+    designation: "",
     city: "",
     product: "",
     requirement: "",
@@ -150,10 +150,15 @@ export default function LeadPopup() {
           </div>
 
           <div className="grid grid-cols-2 gap-3">
-            <div>
-              <Label>Zip *</Label>
-              <Input name="zip" onChange={handleChange} required />
-            </div>
+            <div className="space-y-2">
+                    <Label>Designation *</Label>
+                    <Input
+                      name="designation"
+                      value={formData.designation}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
 
             <div>
               <Label>City *</Label>
@@ -171,10 +176,8 @@ export default function LeadPopup() {
               className="w-full h-10 border rounded-md px-3"
             >
               <option value="">Select Product</option>
-              <option>EG Rotary Screw Compressor - 11-250 kW</option>
-              <option>SP Rotary Screw Compressor - 90-110 kW</option>
-              <option>PM Rotary Screw Compressor - 11-45 kW</option>
-              <option>Rotary Screw Compressor - 2.2-37 kW</option>
+              <option>Rotary Screw Compressor VFD Equipped</option>
+              <option>Reciprocating Piston Compressors</option>
             </select>
           </div>
  

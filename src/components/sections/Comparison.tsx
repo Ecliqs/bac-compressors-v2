@@ -1,4 +1,5 @@
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
+import { Button } from "@/components/ui/button"
 
 export default function Comparison() {
   return (
@@ -46,6 +47,12 @@ export default function Comparison() {
               </TableRow>
             </TableBody>
           </Table>
+        </div>
+        <div className="text-center max-w-3xl mx-auto mb-1 mt-12">
+          <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary mb-4">Not sure which one to go for?</h2>
+          <Button className=" p-3 bg-red-600 text-white hover:text-accent-foreground hover:bg-accent/90" asChild>
+            <a href="#inquiry">Talk to our expert now!</a>
+          </Button>
         </div>
       </div>
     </section>

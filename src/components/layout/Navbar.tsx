@@ -31,10 +31,11 @@ export default function Navbar() {
         <div className="flex items-center gap-4">
           <Button variant="outline" size="sm" className="hidden sm:flex gap-2 border-primary text-primary">
             <PhoneCall className="w-4 h-4" />
-            <span className="font-bold">+91  63910 10314</span>
+             <a href="tel:+916391010314">
+            <span className="font-bold">+91  63910 10314</span> </a>
           </Button>
 
-          <Button size="sm" className="bg-accent text-accent-foreground hover:bg-accent/90" asChild>
+          <Button size="sm" className="bg-red-600 text-white  hover:text-accent-foreground hover:bg-accent/90" asChild>
             <a href="#inquiry">Get Quote</a>
           </Button>
         </div>
