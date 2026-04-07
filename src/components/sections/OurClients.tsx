@@ -49,18 +49,18 @@ const clients = [
     name: "Indo Shell Cast",
     logo: "https://www.bac-compressors.com/images/customer-images/indo-shell-cast-logo.webp",
   },
-  {
-    name: "Wasan Toyota",
-    logo: "https://www.bac-compressors.com/images/customer-images/toyota-logo.webp",
-  },
+//   {
+//     name: "Wasan Toyota",
+//     logo: "https://www.bac-compressors.com/images/customer-images/toyota-logo.webp",
+//   },
   {
     name: "Bharat Petroleum",
     logo: "https://www.bac-compressors.com/images/customer-images/bharat-petroleum-logo.webp",
   },
-  // {
-  //   name: "HP",
-  //   logo: "https://www.bac-compressors.com/images/customer-images/hp-logo.webp",
-  // },
+  {
+    name: "HP",
+    logo: "https://www.bac-compressors.com/images/customer-images/hp-logo.webp",
+  },
 ];
 
 // ✅ Products Data
