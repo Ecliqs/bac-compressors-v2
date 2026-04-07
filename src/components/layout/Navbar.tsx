@@ -22,9 +22,9 @@ export default function Navbar() {
         </Link>
 
         <div className="hidden md:flex items-center gap-8 text-sm font-medium">
-          <Link href="#products" className="hover:text-accent transition-colors">Products</Link>
-          <Link href="#education" className="hover:text-accent transition-colors">Compare</Link>
-          <Link href="#industries" className="hover:text-accent transition-colors">Industries</Link>
+          {/* <Link href="#products" className="hover:text-accent transition-colors">Products</Link> */}
+          {/* <Link href="#education" className="hover:text-accent transition-colors">Compare</Link> */}
+          {/* <Link href="#industries" className="hover:text-accent transition-colors">Industries</Link> */}
           {/* <Link href="#advisor" className="hover:text-accent transition-colors">AI Advisor</Link> */}
         </div>
 

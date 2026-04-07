@@ -99,7 +99,7 @@ export default function LeadForm() {
 
             {/* LEFT SECTION */}
 
-            <div className="p-8 md:p-12 bg-red-600 text-primary-foreground space-y-6 flex flex-col justify-center">
+            <div className="p-8 md:p-12 bg-primary text-primary-foreground space-y-6 flex flex-col justify-center">
 
               <h2 className="text-3xl md:text-4xl font-bold font-headline">
                 Need the Right Air Compressor for Your Factory?

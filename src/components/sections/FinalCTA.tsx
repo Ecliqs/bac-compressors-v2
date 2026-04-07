@@ -3,7 +3,7 @@ import { PhoneCall } from 'lucide-react';
 
 export default function FinalCTA() {
   return (
-    <section className="py-20 bg-red-600 text-primary-foreground">
+    <section className="py-20 bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 text-center space-y-8">
         <h2 className="text-3xl md:text-5xl font-bold font-headline max-w-4xl mx-auto">
           Request a Customized Quote for Your Industrial Air Compressor Needs

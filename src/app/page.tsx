@@ -14,6 +14,7 @@ import Footer from '@/components/layout/Footer';
 import StickyCTA from '@/components/ui/StickyCTA';
 import { Toaster } from '@/components/ui/toaster';
 import LeadPopup from "@/components/LeadPopup"
+import Clients from '@/components/sections/OurClients';
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <TrustMarkers />
+      <Clients />
       <Products />
       {/* <AIAdvisor /> */}
       <Comparison />

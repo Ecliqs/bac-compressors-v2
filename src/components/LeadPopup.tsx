@@ -186,7 +186,7 @@ export default function LeadPopup() {
             <Textarea name="requirement" onChange={handleChange} />
           </div>
 
-          <Button type="submit" className="w-full" disabled={loading}>
+          <Button type="submit" className="w-full bg-red-600 text-white" disabled={loading}>
             {loading ? (
               "Sending..."
             ) : (

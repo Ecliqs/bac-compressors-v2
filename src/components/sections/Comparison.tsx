@@ -12,7 +12,7 @@ export default function Comparison() {
         
         <div className="max-w-4xl mx-auto overflow-hidden rounded-xl border border-border shadow-sm">
           <Table>
-            <TableHeader className="bg-primary hover:bg-primary">
+            <TableHeader className="bg-red-600 hover:bg-primary">
               <TableRow>
                 <TableHead className="text-white font-bold h-14">Feature</TableHead>
                 <TableHead className="text-white font-bold h-14">Reciprocating Compressor</TableHead>
